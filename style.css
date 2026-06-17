@@ -1760,3 +1760,75 @@ footer {
     height: 42px;
   }
 }
+
+/* ============================================
+   THÈME CLAIR (Light theme) — surcharge finale
+   ============================================ */
+:root {
+  --bg-main: #f4f6fb;
+  --bg-surface: rgba(255, 255, 255, 0.72);
+  --bg-surface-opaque: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.70);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dark: #64748b;
+  --border-color: rgba(15, 23, 42, 0.10);
+  --border-glow: rgba(99, 102, 241, 0.35);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Orbes lumineux plus discrets sur fond clair */
+.glow-orb { opacity: 0.10; }
+
+/* En-tête */
+header {
+  background: rgba(255, 255, 255, 0.72);
+  border-bottom: 1px solid var(--border-color);
+}
+header.scrolled {
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.15);
+}
+
+/* Cartes en verre : ombre douce + contour visible sur fond clair */
+.glass-card {
+  box-shadow: 0 6px 24px -10px rgba(15, 23, 42, 0.12);
+}
+
+/* Titre héros : dégradé sombre (l'ancien passait par un blanc invisible) */
+.hero-title {
+  background: linear-gradient(135deg, #0f172a 25%, #334155 65%, #64748b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Remplissages subtils : étaient blancs sur fond sombre -> sombres sur fond clair */
+.skill-bar-bg,
+.timeline-year,
+.hero-stats,
+.filter-btn,
+.modal-close,
+.impact-item,
+.meta-pill,
+.tag,
+.form-control {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.btn-secondary:hover { background: rgba(15, 23, 42, 0.05); }
+
+/* Fenêtre modale (visionneuse PDF) */
+.modal { background: rgba(15, 23, 42, 0.45); }
+.modal-body { background: #e2e8f0; }
+
+/* Pied de page */
+footer {
+  background: #eef2f7;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-dark);
+}
