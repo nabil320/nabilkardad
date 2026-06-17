@@ -12,6 +12,9 @@
 
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
   <!-- Background Glowing Orbs -->
   <div class="glow-container">
     <div class="glow-orb orb-1"></div>
@@ -35,7 +38,7 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#accueil" class="nav-link active">Accueil</a></li>
           <li><a href="#cursus" class="nav-link">Cursus & Classements</a></li>
-          <li><a href="#experience" class="nav-link">Stage DSTM</a></li>
+          <li><a href="#experience" class="nav-link">Expérience Pro</a></li>
           <li><a href="#projets" class="nav-link">Projets</a></li>
           <li><a href="#competences" class="nav-link">Compétences</a></li>
           <li><a href="#documents" class="nav-link">Documents</a></li>
@@ -54,17 +57,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="accueil" style="min-height: 100vh; display: flex; align-items: center;">
+  <section id="accueil" style="min-height: 100vh; display: flex; align-items: center; position: relative;">
     <div class="container hero-content">
       <div class="hero-left">
-        <div class="badge-student">élève-ingénieur pge 2 &bull; systèmes Électriques</div>
+        <div class="badge-student">élève-ingénieur pge &bull; ingénieur assistant amélioration continue</div>
         <h1 class="hero-title">Innover par la<br><span>Mécatronique</span></h1>
-        <p class="hero-subtitle">Étudiant à l'École Nationale Supérieure d'Arts et Métiers</p>
+        <p class="hero-subtitle">Arts et Métiers &bull; Ingénieur Assistant Amélioration Continue chez Décayeux STM</p>
         <p class="hero-pitch">
-          Élève ingénieur en 2ᵉ année à l’École Nationale Supérieure d’Arts et Métiers de Rabat, passionné par l’électronique embarquée,
-          les systèmes intelligents et les technologies de l’industrie 4.0. Intéressé par le développement de solutions innovantes dans 
-          les domaines des véhicules intelligents, de l’automatisation et des systèmes connectés. Curieux, rigoureux et motivé par les projets techniques à fort impact technologique.
-
+          Classé <strong>1er national</strong> en première année d'école d'ingénieurs (Arts et Métiers Rabat) et
+          sélectionné pour un double diplôme d'ingénieur généraliste en France (Campus de Lille). Actuellement en
+          <strong>contrat de professionnalisation</strong> chez <strong>Décayeux STM</strong> comme ingénieur
+          assistant en amélioration continue de l'usinage. Passionné par l'électronique embarquée, les véhicules
+          intelligents et les technologies de l'industrie 4.0.
         </p>
         <div class="hero-actions">
           <a href="#documents" class="btn btn-primary">
@@ -80,6 +84,8 @@
           </a>
           <a href="#contact" class="btn btn-secondary">Me contacter</a>
         </div>
+
+
       </div>
       <div class="hero-right">
         <div class="profile-frame">
@@ -90,12 +96,49 @@
         </div>
       </div>
     </div>
+    <a href="#cursus" class="scroll-indicator" aria-label="Découvrir la suite">
+      <span>Découvrir</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </a>
   </section>
 
   <!-- Timeline & Rankings Section -->
   <section id="cursus">
     <div class="container">
       <h2 class="section-title">Cursus Académique & Distinctions</h2>
+
+      <!-- Stats Block -->
+      <div class="cursus-stats-wrapper">
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value-row">
+              <span class="stat-number" data-target="10">0</span><span class="stat-suffix">e</span>
+            </div>
+            <span class="stat-label">au Maroc</span>
+            <span class="stat-detail">Concours national (CNC)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value-row">
+              <span class="stat-number" data-target="1">0</span><span class="stat-suffix">er national</span>
+            </div>
+            <span class="stat-label">PGE1</span>
+            <span class="stat-detail">29ᵉ / 1200 · tous les campus France</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value-row">
+              <span class="stat-number" data-target="1">0</span><span class="stat-suffix">er national</span>
+            </div>
+            <span class="stat-label">PGE2</span>
+            <span class="stat-detail">65ᵉ / 1203 · tous les campus</span>
+          </div>
+        </div>
+      </div>
+
       <div class="timeline">
 
         <!-- Arts et Métiers -->
@@ -106,11 +149,6 @@
             <h3 class="timeline-title">Diplôme d'Ingénieur d'État</h3>
             <p class="timeline-institution">École des Arts et Métiers - Campus Rabat & Lille (France)</p>
             <ul class="timeline-bullets">
-              
-              <li>
-                <strong>Classement 2ème année (PGE2) :</strong> Classé <strong>1er national</strong> sur la promotion
-                locale et <strong>65ème à l'échelle internationale</strong> (tous campus Maroc & France confondus).
-              </li>
               <li>
                 <strong>Double diplôme d'excellence :</strong> Génie Mécanique & Industrie 4.0 (Maroc) + Diplôme
                 d'Ingénieur Généraliste Arts et Métiers ParisTech (France).
@@ -121,7 +159,13 @@
                 locale et <strong>29ème sur 1203</strong> au niveau international (tous campus Maroc & France
                 confondus).
               </li>
-              
+              <li>
+                <strong>Classement 2ème année (PGE2) :</strong> Classé <strong>1er local</strong> (Major de promotion) et <strong>65ème sur 1200</strong> au niveau national.
+              </li>
+              <li>
+                <strong>Moyenne S5/S6 :</strong> Validation de 62 ECTS avec mention (grades majoritaires A et B).
+                Notamment 19.00/20 en Électronique/Automatique.
+              </li>
             </ul>
           </div>
         </div>
@@ -179,7 +223,104 @@
   <!-- Internship (DSTM) Section -->
   <section id="experience">
     <div class="container">
-      <h2 class="section-title">Expérience en Milieu Industriel</h2>
+      <h2 class="section-title">Expérience Professionnelle & Industrielle</h2>
+
+      <!-- Featured: Contrat de professionnalisation Décayeux — Amélioration Continue -->
+      <div class="glass-card featured-exp">
+        <div class="featured-exp-top">
+          <div class="featured-exp-head">
+            <span class="badge-student live-badge">
+              <span class="live-dot"></span> En poste &bull; Contrat de professionnalisation — 2ᵉ année
+            </span>
+            <h3 class="timeline-title featured-exp-role">Ingénieur Assistant — Amélioration Continue Usinage</h3>
+            <div class="internship-meta">
+              <span class="meta-pill">Décayeux STM (DSTM)</span>
+              <span class="meta-pill">Zone Industrielle de Bouznika, Maroc</span>
+              <span class="meta-pill">Depuis Juin 2026</span>
+              <span class="meta-pill">Lean Manufacturing &bull; Usinage de précision</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="featured-exp-pitch">
+          Dans le cadre d'un contrat de professionnalisation au sein du service méthodes/usinage de Décayeux STM,
+          je conduis des chantiers d'amélioration continue visant à fiabiliser et accélérer la production de pièces
+          de haute précision. Mon axe principal : la <strong>refonte des moyens de bridage</strong> par suppression
+          des montages de serrage manuels au profit de solutions <strong>auto-centrantes</strong>.
+        </p>
+
+        <h4 class="internship-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Réalisations clés
+        </h4>
+        <ul class="internship-list">
+          <li><strong>Refonte de plusieurs MIP (gammes d'usinage) :</strong> analyse critique des montages
+            existants, identification des opérations à faible valeur ajoutée et reconception des séquences de
+            bridage pour gagner en robustesse et en cadence.</li>
+          <li><strong>Suppression des montages de serrage manuels :</strong> élimination des dispositifs de bridage
+            conventionnels (étaux, brides, cales manuelles) sources de variabilité, de pénibilité et de temps de
+            réglage importants.</li>
+          <li><strong>Passage aux technologies auto-centrantes :</strong> remplacement par des mandrins / étaux
+            auto-centrants qui garantissent automatiquement la concentricité et le centrage de la pièce, sans
+            réglage manuel pièce à pièce.</li>
+          <li><strong>Démarche Lean / SMED :</strong> documentation des nouveaux modes opératoires, réduction des
+            temps de changement de série et standardisation pour fiabiliser la répétabilité.</li>
+        </ul>
+
+        <!-- Before → After technology swap -->
+        <div class="swap-grid">
+          <div class="swap-card swap-before">
+            <div class="swap-label">Avant</div>
+            <h5>Montages de serrage manuels</h5>
+            <ul>
+              <li>Centrage et réglage opérateur pièce à pièce</li>
+              <li>Variabilité de positionnement &amp; concentricité</li>
+              <li>Temps de réglage et pénibilité élevés</li>
+            </ul>
+          </div>
+          <div class="swap-arrow" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+          <div class="swap-card swap-after">
+            <div class="swap-label">Après</div>
+            <h5>Dispositifs auto-centrants</h5>
+            <ul>
+              <li>Centrage automatique et reproductible</li>
+              <li>Concentricité garantie sans réglage manuel</li>
+              <li>Changement de série rapide, pénibilité réduite</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Impact directions -->
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Temps de réglage</strong><span>Changement de série accéléré (SMED)</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow up">↑</div>
+            <div class="impact-text"><strong>Concentricité &amp; répétabilité</strong><span>Centrage automatique fiable</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Rebuts &amp; reprises</strong><span>Moins de variabilité de bridage</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Pénibilité opérateur</strong><span>Suppression des réglages manuels</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="exp-subheading">Stage d'initialisation au milieu industriel</h3>
       <div class="internship-layout">
         <div class="glass-card internship-desc">
           <div>
@@ -395,12 +536,18 @@
         <!-- Project 6 -->
         <div class="glass-card project-card" data-category="mecatronique electronique">
           <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
             </svg>
           </div>
-          <h3>Conception et dimensionnement d'un Réservoir d'Air Comprimé </h3>
-          <p>Conception et dimensionnement complet d'un réservoir d'air comprimé conforme aux normes ASME Section VIII et OSHA 29 CFR 1910.169. Calculs analytiques de résistance des matériaux, modélisation 3D CAO et validation numérique par simulation par Éléments Finis (MEF). Projet destiné à l'Evolutive Learning Factory des Arts et Métiers Campus Rabat.</p>
+          <h3>Conception d'un Réservoir d'Air Comprimé — Projet Fil Rouge</h3>
+          <p>Conception et dimensionnement complet d'un réservoir d'air comprimé conforme aux normes ASME Section VIII
+            et OSHA 29 CFR 1910.169. Calculs analytiques de résistance des matériaux, modélisation 3D CAO et validation
+            numérique par simulation par Éléments Finis (MEF). Projet destiné à l'Evolutive Learning Factory des Arts et
+            Métiers Campus Rabat.</p>
           <div class="project-tags">
             <span class="tag">Génie Mécanique</span>
             <span class="tag">Éléments Finis</span>
@@ -606,6 +753,25 @@
           </div>
         </div>
 
+        <!-- Doc: Contrat de professionnalisation Décayeux -->
+        <div class="glass-card doc-card">
+          <div class="doc-info">
+            <div class="doc-type">Contrat de travail</div>
+            <h3 class="doc-title">Contrat de Professionnalisation — Décayeux STM (2ᵉ année)</h3>
+          </div>
+          <div class="doc-action">
+            <button class="doc-btn" data-pdf="contrat de travail 2 eme annee.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Consulter en ligne
+            </button>
+            <span class="doc-size">PDF</span>
+          </div>
+        </div>
+
         <!-- Doc 2: Attestation de stage -->
         <div class="glass-card doc-card">
           <div class="doc-info">
@@ -708,7 +874,7 @@
             <h3 class="doc-title">Rapport — Bras Manipulateur JetMax</h3>
           </div>
           <div class="doc-action">
-            <button class="doc-btn" data-pdf="rapport_presentation_complet.pdf">
+            <button class="doc-btn" data-pdf="projet realise/rapport_presentation_complet.pdf">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -724,11 +890,12 @@
         <div class="glass-card doc-card">
           <div class="doc-info">
             <div class="doc-type">Projet Fil Rouge</div>
-            <h3 class="doc-title">Réservoir d'Air Comprimé</h3>
+            <h3 class="doc-title">Conception d'un Réservoir d'Air Comprimé</h3>
           </div>
           <div class="doc-action">
-            <button class="doc-btn" data-pdf="Conception d'un Réservoir d'Air Comprimé.pdf">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <button class="doc-btn" data-pdf="projet realise/Conception d'un Réservoir d'Air Comprimé.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
               </svg>
@@ -751,8 +918,9 @@
         <div class="contact-info">
           <h3 class="timeline-title" style="font-size: 1.8rem; margin-bottom: 10px;">Commençons à échanger</h3>
           <p style="color: var(--text-muted); margin-bottom: 15px;">
-            Actuellement à la recherche d'un stage d'assistant ingénieur ou ouvert à toute discussion technique sur
-            l'électronique et la mécatronique. N'hésitez pas à me joindre directement.
+            Actuellement ingénieur assistant en amélioration continue chez Décayeux STM (contrat de
+            professionnalisation) et ouvert à toute discussion technique sur l'usinage de précision, l'électronique
+            et la mécatronique. N'hésitez pas à me joindre directement.
           </p>
 
           <div class="contact-card">
@@ -832,6 +1000,14 @@
       </div>
     </div>
   </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
 
   <script src="app.js"></script>
 </body>
