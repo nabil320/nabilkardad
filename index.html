@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabil KARDAD | Portfolio Ingénierie - Arts et Métiers</title>
+  <meta name="description"
+    content="Portfolio professionnel de Nabil Kardad, élève-ingénieur aux Arts et Métiers  spécialisé en Systèmes Électriques, Mécatronique et Robotique.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* Focused portfolio improvements */
+.hero-actions{flex-wrap:wrap}.profile-links{display:flex;align-items:center;gap:16px;margin-top:24px;font-size:.95rem}.profile-links a,.stat-detail{color:#4338ca}.profile-links a:hover,.case-link:hover{text-decoration:underline}
+.hero-pitch{max-width:640px}.hero-subtitle{max-width:650px}.badge-student{white-space:normal}.section-eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:#4338ca;margin-bottom:12px}.section-intro{max-width:680px;color:var(--text-muted);margin:-14px 0 36px;line-height:1.8}
+.selected-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.case-card{padding:0!important;overflow:hidden;display:flex;flex-direction:column}.case-preview{display:block;background:#fff;border-bottom:1px solid var(--border-color);padding:14px;aspect-ratio:16/10;overflow:hidden}.case-preview img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .25s}.case-preview:hover img{transform:scale(1.03)}.case-body{padding:26px;display:flex;flex-direction:column;flex:1}.case-category{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:#4338ca;margin-bottom:12px}.case-body h3{font-size:1.5rem;line-height:1.25;margin-bottom:14px}.case-summary{font-size:.95rem;color:var(--text-muted);line-height:1.7;margin-bottom:24px}.case-facts{margin:0 0 24px;display:grid;gap:6px}.case-facts dt{font-weight:700;font-size:.83rem}.case-facts dd{margin:0 0 14px;color:var(--text-muted);font-size:.86rem;line-height:1.65}.case-link{margin-top:auto;display:inline-flex;gap:8px;align-items:center;color:#4338ca;font-weight:600;font-size:.9rem;min-height:44px}.other-projects{margin-top:32px;border:1px solid var(--border-color);border-radius:16px;padding:0 24px;background:rgba(255,255,255,.5)}.other-projects summary{cursor:pointer;padding:24px 0;font-weight:600}.other-projects .projects-grid{padding-bottom:24px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.evidence-skills{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.evidence-skills article{display:flex;flex-direction:column}.evidence-skills h3{color:#0e7490;line-height:1.35}.evidence-list{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:22px}.evidence-list li strong{display:block;margin-bottom:5px;font-size:.92rem}.evidence-list li span{display:block;color:var(--text-muted);font-size:.88rem;line-height:1.7}.languages-note{margin-top:24px;color:var(--text-muted)}
+.contact-form h3{font-size:1.5rem}.contact-form>p{font-size:.9rem;color:var(--text-muted);line-height:1.7}.contact-fallback a{color:#4338ca;overflow-wrap:anywhere}.contact-status:empty{display:none}.contact-status{background:#eef2ff;color:#3730a3!important;border-radius:10px;padding:12px}.contact-form textarea{min-height:145px}.live-dot{animation:none!important;background:#6366f1;box-shadow:none}.stat-suffix{white-space:nowrap}.stat-detail{display:block;margin-top:8px}.profile-img{object-fit:cover}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #4f46e5;outline-offset:5px}section,article[id]{scroll-margin-top:110px}
+@media(max-width:1050px){.selected-projects,.evidence-skills{grid-template-columns:1fr}.case-card{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr)}.case-preview{aspect-ratio:auto;height:100%;min-height:240px;border-bottom:0;border-right:1px solid var(--border-color)}}
+@media(max-width:640px){.case-card{display:flex}.case-preview{aspect-ratio:16/10;height:auto;min-height:0;border-right:0;border-bottom:1px solid var(--border-color)}.case-body{padding:22px}.other-projects .projects-grid{grid-template-columns:1fr}.other-projects{padding:0 18px}.hero-actions .btn{font-size:.9rem}.hero-stats{flex-wrap:wrap}.stat-item{min-width:0}.profile-links{flex-wrap:wrap}.section-intro{margin-top:0}.contact-form{padding:22px!important}.container{max-width:100%}.hero-subtitle{font-size:1.15rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Background Glowing Orbs -->
+  <div class="glow-container">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        Nabil<span>Kardad</span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+          <li><a href="#cursus" class="nav-link">Cursus & Classements</a></li>
+          <li><a href="#experience" class="nav-link">Expérience Pro</a></li>
+          <li><a href="#projets" class="nav-link">Projets</a></li>
+          <li><a href="#competences" class="nav-link">Compétences</a></li>
+          <li><a href="#documents" class="nav-link">Documents</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu de navigation" aria-controls="nav-menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="accueil" style="min-height: 100vh; display: flex; align-items: center; position: relative;">
+    <div class="container hero-content">
+      <div class="hero-left">
+        <div class="badge-student">Arts et Métiers &bull; M2 SAR à Sorbonne Université</div>
+        <h1 class="hero-title">Innover par la<br><span>Mécatronique</span></h1>
+        <p class="hero-subtitle">Robotique, mécatronique &amp; performance industrielle</p>
+        <p class="hero-pitch">En <strong>3ᵉ année du cursus ingénieur aux Arts et Métiers</strong>, effectuée en <strong>Master 2 Systèmes Avancés et Robotique à Sorbonne Université</strong>. Je relie modélisation, programmation et expérience de terrain pour concevoir des systèmes et fiabiliser la production.</p>
+        <div class="hero-actions">
+
+          <a href="#projets" class="btn btn-secondary">Découvrir mes projets <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="profile-links"><a href="mailto:nabil.kardad@ensam.eu">Me contacter</a><span aria-hidden="true">·</span><a href="https://github.com/nabil320" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+
+
+      </div>
+      <div class="hero-right">
+        <div class="profile-frame">
+          <div class="profile-img-container">
+            <img src="photo pro.jpeg" alt="Photo professionnelle de Nabil Kardad" class="profile-img"
+              onerror="this.src='photo profe .jpg'">
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#cursus" class="scroll-indicator" aria-label="Découvrir la suite">
+      <span>Découvrir</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <!-- Timeline & Rankings Section -->
+  <section id="cursus">
+    <div class="container">
+      <h2 class="section-title">Cursus Académique & Distinctions</h2>
+
+      <!-- Stats Block -->
+      <div class="cursus-stats-wrapper"><div class="hero-stats">
+        <div class="stat-item"><div class="stat-value-row"><span class="stat-number">1</span><span class="stat-suffix">er / 20</span></div><span class="stat-label">Major de promotion · PGE1</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><div class="stat-value-row"><span class="stat-number">29</span><span class="stat-suffix">e / 1 193</span></div><span class="stat-label">Réseau Arts et Métiers · 1A</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><div class="stat-value-row"><span class="stat-number">65</span><span class="stat-suffix">e / 1 223</span></div><span class="stat-label">Réseau Arts et Métiers · 2B</span></div>
+      </div></div>
+      <div class="timeline">
+
+        <!-- Arts et Métiers -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-year">2024 - 2027</div>
+            <h3 class="timeline-title">Diplôme d'Ingénieur d'État</h3>
+            <p class="timeline-institution">École des Arts et Métiers </p>
+            <ul class="timeline-bullets">
+              <li>
+                 Actuellement en <strong>3ᵉ année du cursus ingénieur</strong>, que j'effectue dans le cadre du <strong>Master 2 (M2) Systèmes Avancés et Robotique (SAR)</strong> à <strong>Sorbonne Université</strong>, cohabilité avec <strong>Arts et Métiers ParisTech</strong>, à Paris.
+                 <span class="badge-rank badge-gold">Mobilité académique &bull; Sorbonne Université</span>
+
+
+              </li>
+              <li>
+                <strong>Classement 2ème année (PGE2) :</strong> <strong>65ᵉ sur 1 223 étudiants</strong> au sein du réseau Arts et Métiers, selon l’attestation d’excellence académique.</li>
+              <li>
+                <strong>Classement 1ère année (PGE1) :</strong> <strong>1er de promotion sur 20 étudiants</strong> et <strong>29ᵉ sur 1 193</strong> au sein du réseau Arts et Métiers.</li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- CPGE TSI -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-year">2022 - 2024</div>
+            <h3 class="timeline-title">Classes Préparatoires aux Grandes Écoles (CPGE)</h3>
+            <p class="timeline-institution">Lycée Mohamed V - Béni-Mellal, Option TSI (Technologies & Sciences
+              Industrielles)</p>
+            <ul class="timeline-bullets">
+              <li>
+                <strong>Concours National Commun (CNC) 2024 :</strong> Classé <strong>50ème national</strong> toutes
+                écoles d'ingénieurs confondues.
+              </li>
+              <li>
+                <strong>Arts et Métiers :</strong> Classé <strong>10ème national</strong> sur la liste finale TSI
+                d'admission au Programme Grande École (PGE).
+              </li>
+              <li>
+                <strong>École Centrale Casablanca :</strong> Classé <strong>38ème national</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Baccalaureate -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-year">2021 - 2022</div>
+            <h3 class="timeline-title">Baccalauréat Scientifique & Technique</h3>
+            <p class="timeline-institution">Lycée Technique Mohamed V - Béni-Mellal</p>
+            <ul class="timeline-bullets">
+              <li>
+                <strong>Filière :</strong> Sciences et Technologies Électriques (STE).
+              </li>
+              <li>
+                <strong>Distinction :</strong> Mention <strong>Très Bien</strong>
+                <strong>2 ème  dans la région</strong>.
+              </li>
+              <li>
+                <strong>Rang :</strong> Classé <strong>Deuxième</strong> dans toute la région de Béni-Mellal Khénifra.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship (DSTM) Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Expérience Professionnelle & Industrielle</h2>
+
+      <!-- Featured: Emploi de deuxième année chez Décayeux — Amélioration Continue -->
+      <div class="glass-card featured-exp">
+        <div class="featured-exp-top">
+          <div class="featured-exp-head">
+            <span class="badge-student live-badge">
+              <span class="live-dot"></span> Emploi en 2<sup>e</sup> année &bull; Ingénieur assistant
+            </span>
+            <h3 class="timeline-title featured-exp-role">Ingénieur Assistant — Amélioration Continue Usinage</h3>
+            <div class="internship-meta">
+              <span class="meta-pill">Décayeux STM (DSTM)</span>
+              <span class="meta-pill">Zone Industrielle de Bouznika, Maroc</span>
+              <span class="meta-pill">Lean Manufacturing &bull; Usinage de précision</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="featured-exp-pitch">
+          Lors de mon emploi en deuxième année au sein du service méthodes/usinage de Décayeux STM,
+          j'ai conduit des chantiers d'amélioration continue visant à fiabiliser et accélérer la production de pièces
+          de haute précision. Mon axe principal : la <strong>refonte des moyens de bridage</strong> par suppression
+          des montages de serrage manuels au profit de solutions <strong>auto-centrantes</strong>.
+        </p>
+
+        <h4 class="internship-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Réalisations clés
+        </h4>
+        <ul class="internship-list">
+          <li><strong>Refonte de plusieurs MIP (gammes d'usinage) :</strong> analyse critique des montages
+            existants, identification des opérations à faible valeur ajoutée et reconception des séquences de
+            bridage pour gagner en robustesse et en cadence.</li>
+          <li><strong>Suppression des montages de serrage manuels :</strong> élimination des dispositifs de bridage
+            conventionnels (étaux, brides, cales manuelles) sources de variabilité, de pénibilité et de temps de
+            réglage importants.</li>
+          <li><strong>Passage aux technologies auto-centrantes :</strong> remplacement par des mandrins / étaux
+            auto-centrants qui garantissent automatiquement la concentricité et le centrage de la pièce, sans
+            réglage manuel pièce à pièce.</li>
+          <li><strong>Démarche Lean / SMED :</strong> documentation des nouveaux modes opératoires, réduction des
+            temps de changement de série et standardisation pour fiabiliser la répétabilité.</li>
+          <li><strong>Amélioration continue des KPI :</strong> mise en place et automatisation des indicateurs de
+            performance de l'atelier (TRS, productivité, rebuts, temps de changement de série) sous Excel avec
+            <strong>Power Query</strong>, connecté directement à l'ERP <strong>Sage</strong> pour l'extraction et
+            l'actualisation automatique des données de production.</li>
+        </ul>
+
+        <p></p>
+        <!-- Before → After technology swap -->
+        <div class="swap-grid">
+          <div class="swap-card swap-before">
+            <div class="swap-label">Avant</div>
+            <h5>Montages de serrage manuels</h5>
+            <ul>
+              <li>Centrage et réglage opérateur pièce à pièce</li>
+              <li>Variabilité de positionnement &amp; concentricité</li>
+              <li>Temps de réglage et pénibilité élevés</li>
+            </ul>
+          </div>
+          <div class="swap-arrow" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+          <div class="swap-card swap-after">
+            <div class="swap-label">Après</div>
+            <h5>Dispositifs auto-centrants</h5>
+            <ul>
+              <li>Centrage automatique et reproductible</li>
+              <li>Concentricité garantie sans réglage manuel</li>
+              <li>Changement de série rapide, pénibilité réduite</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Impact directions -->
+        <div class="impact-grid">
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Temps de réglage</strong><span>Changement de série accéléré (SMED)</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow up">↑</div>
+            <div class="impact-text"><strong>Concentricité &amp; répétabilité</strong><span>Centrage automatique fiable</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Rebuts &amp; reprises</strong><span>Moins de variabilité de bridage</span></div>
+          </div>
+          <div class="impact-item">
+            <div class="impact-arrow down">↓</div>
+            <div class="impact-text"><strong>Pénibilité opérateur</strong><span>Suppression des réglages manuels</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="exp-subheading">Stage d'initialisation au milieu industriel</h3>
+      <div class="internship-layout">
+        <div class="glass-card internship-desc">
+          <div>
+            <div class="badge-student"
+              style="background: rgba(6, 182, 212, 0.1); border-color: rgba(6, 182, 212, 0.2); color: #22d3ee; margin-bottom: 12px;">
+              Stage d'Initialisation au Milieu Industriel</div>
+            <h3 class="timeline-title" style="font-size: 1.8rem; margin-bottom: 8px;">Stage d'été — Décayeux STM (DSTM)
+            </h3>
+            <div class="internship-meta">
+              <span class="meta-pill">Rabat, Maroc</span>
+              <span class="meta-pill">Été 2025</span>
+              <span class="meta-pill">Secteur : Sous-traitance industrielle de haute précision</span>
+            </div>
+          </div>
+
+          <div class="internship-sections">
+            <div>
+              <h4 class="internship-section-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Missions principales & Compétences développées
+              </h4>
+              <ul class="internship-list">
+                <li><strong>Matriçage à chaud et refrappe à froid :</strong> Observation et étude des procédés de
+                  transformation mécanique sous des presses hydrauliques de 400 à 1000 tonnes (augmentation de la dureté
+                  par écrouissage contrôlé).</li>
+                <li><strong>Usinage sur machines CNC & Électro-érosion :</strong> Centrage de pièces, réglage de
+                  pressions, suivi des fréquences d'usinage et programmation de trajectoires.</li>
+                <li><strong>Contrôle Qualité Dimensionnel (MMT) :</strong> Utilisation d'une Machine à Mesurer
+                  Tridimensionnelle assistée par le logiciel de métrologie <strong>Wenzel</strong> pour valider la
+                  conformité géométrique des pièces selon les normes ISO.</li>
+              </ul>
+            </div>
+
+            <div class="appreciation-block">
+              <p class="appreciation-quote">
+                "Nabil s'est montré très organisé, rigoureux et autonome durant son intégration sur notre ligne de
+                production. Sa curiosité scientifique et son respect strict des procédures de sécurité ont été
+                exemplaires."
+              </p>
+              <p class="appreciation-author">— Fiche d'Appréciation DSTM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card challenges-card">
+          <h3 class="timeline-title" style="color: var(--accent); display: flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            Défis & Solutions relevés
+          </h3>
+
+          <div class="challenge-item" style="border-color: var(--primary);">
+            <h4>Adaptation au rythme industriel</h4>
+            <p>La transition entre la théorie des classes préparatoires et l'atelier de fabrication a demandé une
+              réactivité rapide. J'ai adopté une posture d'observation active et structuré mes échanges avec les
+              techniciens pour m'intégrer efficacement.</p>
+          </div>
+
+          <div class="challenge-item" style="border-color: var(--secondary);">
+            <h4>Maîtrise du logiciel Wenzel (MMT)</h4>
+            <p>La programmation et l'étalonnage de la Machine à Mesurer Tridimensionnelle exigeaient une précision
+              micrométrique. Grâce à des séances de formation sur le tas et à une prise de notes méthodique, j'ai
+              rapidement pu vérifier la conformité des pièces de manière autonome.</p>
+          </div>
+
+          <div class="challenge-item" style="border-color: var(--accent);">
+            <h4>Gestion des risques & Sécurité</h4>
+            <p>L'environnement du forgeage à chaud présente des risques thermiques et mécaniques réels. J'ai veillé à
+              l'application stricte des consignes de sécurité et au port systématique des Équipements de Protection
+              Individuelle (EPI).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projets"><div class="container">
+  <p class="section-eyebrow">De la théorie à l'application</p>
+  <h2 class="section-title">Trois projets à découvrir</h2>
+  <p class="section-intro">Robotique, conception mécanique et données industrielles : une sélection de travaux, avec leurs démarches et leurs livrables.</p>
+  <div class="selected-projects">
+    <article class="glass-card case-card" id="projet-jetmax">
+
+      <div class="case-body"><p class="case-category">01 / Robotique appliquée</p><h3>JetMax : du modèle au mouvement</h3>
+      <p class="case-summary">Étudier le pilotage d'un bras articulé, de sa cinématique à la vision artificielle.</p>
+      <dl class="case-facts"><dt>Travail présenté</dt><dd>Modèles géométriques direct et inverse, trajectoires, régulation PID et séquences de pick-and-place.</dd><dt>Outils</dt><dd>Python · ROS · OpenCV · NVIDIA Jetson Nano</dd><dt>Livrable</dt><dd>Présentation technique et rapport détaillant la démarche et les validations.</dd></dl>
+      </div>
+    </article>
+    <article class="glass-card case-card" id="projet-reservoir">
+
+      <div class="case-body"><p class="case-category">02 / Conception mécanique</p><h3>Dimensionner un réservoir d'air</h3>
+      <p class="case-summary">Relier le calcul analytique à la simulation numérique d'un équipement sous pression.</p>
+      <dl class="case-facts"><dt>Contribution au projet collectif</dt><dd>Participation à l'étude de dimensionnement et à la démarche de validation présentées dans le rapport.</dd><dt>Méthodes</dt><dd>Résistance des matériaux · CAO 3D · Éléments finis</dd><dt>Livrable</dt><dd>Étude comparant les calculs et les simulations, avec une analyse des matériaux.</dd></dl>
+      </div>
+    </article>
+    <article class="glass-card case-card" id="projet-dstm">
+
+      <div class="case-body"><p class="case-category">03 / Performance industrielle</p><h3>Fiabiliser les décisions en atelier</h3>
+      <p class="case-summary">Mettre en relation moyens d'usinage, données de production et indicateurs de pilotage.</p>
+      <dl class="case-facts"><dt>Mon rôle</dt><dd>Formalisation des règles de conception des montages, construction de tableaux de bord et développement d'un calculateur de coût.</dd><dt>Outils</dt><dd>Excel · Power Query · Données ERP · TRS / TRG</dd><dt>Livrables</dt><dd>Référentiel de montages, indicateurs de performance et modèle charge-capacité.</dd></dl>
+      </div>
+    </article>
+  </div>
+  <details class="other-projects"><summary>Découvrir mes autres projets en mécatronique et électronique</summary><div class="projects-grid">
+    <article class="glass-card project-card"><h3>Redressement automatique de véhicules</h3><p>Modélisation d'un système mécatronique pour rétablir l'équilibre d'un véhicule après basculement.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">Simulink</span></div></article>
+    <article class="glass-card project-card"><h3>Détection de renversement</h3><p>Étude d'un module de surveillance associant capteurs inertiels, microcontrôleur et alertes.</p><div class="project-tags"><span class="tag">C / C++</span><span class="tag">Capteurs</span></div></article>
+    <article class="glass-card project-card"><h3>Refroidissement intelligent de moteurs</h3><p>Régulation thermique avec capteurs de température et adaptation de la ventilation.</p><div class="project-tags"><span class="tag">MATLAB</span><span class="tag">PID</span></div></article>
+    <article class="glass-card project-card"><h3>Détection d'obstacles</h3><p>Étude d'un système de détection utilisant les mesures de capteurs à ultrasons et LIDAR.</p><div class="project-tags"><span class="tag">C++</span><span class="tag">Robotique</span></div></article>
+  </div></details>
+</div></section>
+
+  <!-- Skills Section -->
+  <section id="competences"><div class="container">
+  <p class="section-eyebrow">Des compétences mises en pratique</p><h2 class="section-title">Outils &amp; applications</h2>
+  <div class="skills-grid evidence-skills">
+    <article class="glass-card skills-category"><h3>Modélisation des robots</h3><ul class="evidence-list"><li><strong>Robotique</strong><span>Modélisation des systèmes robotiques.</span></li><li><strong>Dynamique des robots</strong><span>Modélisation et analyse du comportement dynamique des robots.</span></li></ul></article>
+    <article class="glass-card skills-category"><h3>Commande des systèmes</h3><ul class="evidence-list"><li><strong>Commande linéaire</strong><span>Analyse et commande des systèmes linéaires.</span></li><li><strong>Commande non linéaire</strong><span>Analyse et commande des systèmes non linéaires.</span></li><li><strong>Commande robuste</strong><span>Commande en présence d'incertitudes et de perturbations.</span></li></ul></article>
+    <article class="glass-card skills-category"><h3>Estimation d'état</h3><ul class="evidence-list"><li><strong>Filtre de Kalman</strong><span>Estimation d'état des systèmes linéaires à partir de mesures bruitées.</span></li><li><strong>Filtre de Kalman étendu (EKF)</strong><span>Estimation non linéaire par linéarisation locale.</span></li><li><strong>Filtre de Kalman unscented (UKF)</strong><span>Estimation non linéaire par propagation de points sigma.</span></li></ul></article>
+    <article class="glass-card skills-category"><h3>Robotique &amp; programmation</h3><ul class="evidence-list"><li><strong>Python &amp; ROS</strong><span>Modélisation cinématique et organisation du pilotage d'un bras articulé.</span></li><li><strong>OpenCV &amp; vision</strong><span>Traitement d'images et repérage d'objets pour le pick-and-place.</span></li><li><strong>Automatique</strong><span>Planification de trajectoires et régulation PID.</span></li></ul><a class="case-link" href="#projet-jetmax">Voir le projet JetMax →</a></article>
+    <article class="glass-card skills-category"><h3>Conception &amp; simulation</h3><ul class="evidence-list"><li><strong>Résistance des matériaux</strong><span>Calculs analytiques de dimensionnement d'un réservoir sous pression.</span></li><li><strong>CAO &amp; éléments finis</strong><span>Modélisation, définition des charges et analyse des résultats de simulation.</span></li><li><strong>Travail en équipe</strong><span>Participation à une étude mécanique collective et restitution technique.</span></li></ul><a class="case-link" href="#projet-reservoir">Voir l'étude du réservoir →</a></article>
+    <article class="glass-card skills-category"><h3>Données &amp; industrie</h3><ul class="evidence-list"><li><strong>Excel &amp; Power Query</strong><span>Construction et actualisation d'indicateurs à partir des données de production.</span></li><li><strong>Analyse industrielle</strong><span>TRS / TRG, charge-capacité et calcul de coût de revient.</span></li><li><strong>Méthodes &amp; qualité</strong><span>Analyse des montages d'usinage et contrôle dimensionnel MMT.</span></li></ul><a class="case-link" href="#projet-dstm">Voir les réalisations industrielles →</a></article>
+  </div><p class="languages-note"><strong>Langues :</strong> français courant · arabe maternel · anglais B2</p>
+</div></section>
+
+  <!-- Document Library Section -->
+  <section id="documents"><div class="container"><h2 class="section-title">Documents</h2><p>Les documents personnels ne sont pas disponibles en accès public.</p></div></section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Entrer en Contact</h2>
+      <div class="contact-layout">
+
+        <div class="contact-info">
+          <h3 class="timeline-title" style="font-size: 1.8rem; margin-bottom: 10px;">Commençons à échanger</h3>
+          <p style="color: var(--text-muted); margin-bottom: 15px;">
+            Un projet en robotique, en mécatronique ou en amélioration industrielle ? Je serai ravi d'échanger sur mes travaux et sur vos besoins.
+          </p>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>E-mail</h4>
+              <a href="mailto:nabil.kardad@ensam.eu">nabil.kardad@ensam.eu</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Téléphone</h4>
+              <a href="tel:+33758688134">+33 7 58 68 81 34</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form" id="contact-form" aria-describedby="contact-help">
+          <h3>Préparons un échange</h3>
+          <p id="contact-help">Ce formulaire prépare un e-mail dans votre application de messagerie. Vous pourrez le relire et l'envoyer vous-même.</p>
+          <div class="form-group"><label for="name">Nom complet</label><input type="text" id="name" name="name" class="form-control" autocomplete="name" maxlength="120" placeholder="Votre nom" required></div>
+          <div class="form-group"><label for="email">Votre e-mail</label><input type="email" id="email" name="email" class="form-control" autocomplete="email" maxlength="254" placeholder="vous@exemple.fr" required></div>
+          <div class="form-group"><label for="message">Votre message</label><textarea id="message" name="message" class="form-control" maxlength="2500" placeholder="Présentez votre projet ou votre demande…" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Préparer mon e-mail <span aria-hidden="true">↗</span></button>
+          <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+          <p class="contact-fallback">Vous préférez écrire directement ? <a href="mailto:nabil.kardad@ensam.eu">nabil.kardad@ensam.eu</a></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#" class="footer-logo">Nabil<span>Kardad</span></a>
+      <p>&copy; 2026 Nabil Kardad. Tous droits réservés.</p>
+      <p style="font-size: 0.75rem;"><a href="https://github.com/nabil320" target="_blank" rel="noopener noreferrer">Retrouvez mes travaux sur GitHub ↗</a></p>
+    </div>
+  </footer>
+
+  <!-- PDF Modal Viewer -->
+  <div class="modal" id="pdf-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-doc-title">Document</h3>
+        <button class="modal-close" id="modal-close" aria-label="Fermer le document">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="" class="modal-iframe" id="modal-iframe"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+  <script>
+/* Open an email draft; do not claim a message has been sent. */
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const name = form.elements.namedItem('name').value.trim();
+      const email = form.elements.namedItem('email').value.trim();
+      const message = form.elements.namedItem('message').value.trim();
+      if (!name || !message) {
+        document.getElementById('contact-status').textContent = 'Merci de renseigner votre nom et votre message.';
+        return;
+      }
+      const subject = `Contact portfolio — ${name}`;
+      const body = `Bonjour Nabil,\n\n${message}\n\n${name}\n${email}`;
+      const url = `mailto:nabil.kardad@ensam.eu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      document.getElementById('contact-status').textContent = "Votre messagerie va s'ouvrir avec un brouillon. Aucun message n'est envoyé automatiquement. Si rien ne s'ouvre, utilisez l'adresse e-mail ci-dessous.";
+      window.location.href = url;
+    });
+  }
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('nav-menu');
+  if (toggle && menu) {
+    const sync = () => toggle.setAttribute('aria-expanded', String(menu.classList.contains('active')));
+    new MutationObserver(sync).observe(menu, { attributes: true, attributeFilter: ['class'] });
+    sync();
+  }
+});
+
+</script>
+</body>
+
+</html>
